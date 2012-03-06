@@ -6,6 +6,7 @@ etc/RTIR_BulkReject.html.patch
 etc/web.pm.patch
 examples/custom.cfg.example
 html/Callbacks/CIFMinimal/Elements/ShowCustomFields/ShowComponentName
+html/Callbacks/CIFMinimal/RTIR/Display.html/RightColumnStart
 html/CIFMinimal/Elements/ShowCustomFieldRestriction
 html/CIFMinimal/feed
 html/Minimal/AdvancedApikeys.html
@@ -17,6 +18,7 @@ html/Minimal/Elements/AdvancedApikeyGeneration
 html/Minimal/Elements/ApikeyDisplay
 html/Minimal/Elements/ApikeyDisplayGroups
 html/Minimal/Elements/ApikeyGeneration
+html/Minimal/Elements/ApikeyWarning
 html/Minimal/Elements/Header
 html/Minimal/Elements/ImpactByDate
 html/Minimal/Elements/ImpactChart
@@ -26,6 +28,7 @@ html/Minimal/Elements/Search
 html/Minimal/Elements/SearchBox
 html/Minimal/Elements/ShowStatus
 html/Minimal/Elements/Tabs
+html/Minimal/Error.html
 html/Minimal/index.html
 html/Minimal/Observation.html
 html/Minimal/Prefs.html
