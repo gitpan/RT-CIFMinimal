@@ -4,6 +4,9 @@ Set($MinimalRegex, qr!^(?:/+Minimal/)!x );
 my $rt_no_auth = RT->Config->Get('WebNoAuthRegex');
 Set($WebNoAuthRegex, qr{ (?: $rt_no_auth | ^/+Minimal/+NoAuth/ ) }x);
 
+# turn this off if you're using a self-signed cert
+Set($CIFMinimal_TLS_Verify,1);
+
 # everything here should be lower case
 Set(%CIFMinimal_RestrictionMapping,
        #default         => 'amber',
@@ -114,5 +117,9 @@ Set(%CIFMinimal_StaleMap,
 
 # turn on the embedded "CIF Results view" to Display.html
 Set($CIFMinimal_CollectiveView,0);
+
+# set default number of submissions allowed at once
+# via the Minimal/Observation.html interface
+Set($CIFMinimal_MaxSubmissions,15);
 
 1;
